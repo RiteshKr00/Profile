@@ -26,22 +26,22 @@ const Profile = () => {
     <>
       {isLoading ? ( //Checkif if is loading
         <div className="flex bg-gray-800 h-screen xl:h-full p-10">
-          <div class="w-full  bg-gradient-to-br from-green-400 to-blue-500 m-auto rounded-lg border border-gray-200 shadow-lg py-10 px-10 md:px-20">
-            <div class="rounded-full mx-auto  bg-slate-200 h-40 w-40"></div>
-            <div class="animate-pulse flex  space-x-4 py-10">
-              {/* <div class="rounded-full bg-slate-200 h-40 w-40"></div> */}
-              <div class="h-6 bg-slate-200 rounded col-span-2"></div>
-              <div class="flex-1 space-y-6 py-1">
-                <div class="h-6 bg-slate-200 rounded"></div>{" "}
-                <div class="h-6 bg-slate-200 rounded col-span-1"></div>
-                <div class="space-y-8">
-                  <div class="grid grid-cols-3 gap-6">
-                    <div class="h-6 bg-slate-200 rounded col-span-2"></div>
-                    <div class="h-6 bg-slate-200 rounded col-span-1"></div>
-                    <div class="h-6 bg-slate-200 rounded col-span-3"></div>
-                    <div class="h-6 bg-slate-200 rounded col-span-"></div>
+          <div className="w-full  bg-gradient-to-br from-green-400 to-blue-500 m-auto rounded-lg border border-gray-200 shadow-lg py-10 px-10 md:px-20">
+            <div className="rounded-full mx-auto  bg-slate-200 h-40 w-40"></div>
+            <div className="animate-pulse flex  space-x-4 py-10">
+              {/* <div className="rounded-full bg-slate-200 h-40 w-40"></div> */}
+              <div className="h-6 bg-slate-200 rounded col-span-2"></div>
+              <div className="flex-1 space-y-6 py-1">
+                <div className="h-6 bg-slate-200 rounded"></div>{" "}
+                <div className="h-6 bg-slate-200 rounded col-span-1"></div>
+                <div className="space-y-8">
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className="h-6 bg-slate-200 rounded col-span-2"></div>
+                    <div className="h-6 bg-slate-200 rounded col-span-1"></div>
+                    <div className="h-6 bg-slate-200 rounded col-span-3"></div>
+                    <div className="h-6 bg-slate-200 rounded col-span-"></div>
                   </div>
-                  <div class="h-6 bg-slate-200 rounded"></div>
+                  <div className="h-6 bg-slate-200 rounded"></div>
                 </div>
               </div>
             </div>
@@ -118,10 +118,11 @@ const Profile = () => {
                   </div>
                   <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start py-3 border-t border-gray-300 last:border-none">
                     <span className="w-full sm:w-1/3 font-medium text-center sm:text-left">
-                     DOB
+                      DOB
                     </span>
                     <span className="flex-1 text-center sm:text-left">
-                    Born On {Intl.DateTimeFormat("en-US", {
+                      Born On{" "}
+                      {Intl.DateTimeFormat("en-US", {
                         year: "numeric",
                         day: "numeric",
                         month: "long",
